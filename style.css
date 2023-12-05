@@ -22,6 +22,7 @@
 }
 body {
     background: #00000000;
+    overflow: hidden;
 }
 
 body .hidden {
@@ -39,6 +40,7 @@ body .hidden {
 }
 
 .instr {
+    touch-action: none;
     width: 85%;
     min-height: 326px;
     border-radius: 23px;
