@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.screen {
+    
+    width: 100%;
+    height: 100vh;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.32px;
+    font-family: "Inter", Helvetica, sans-serif;
+
+}
+body {
+    background: #00000000;
+}
+
+body .hidden {
+    display: none;
+}
+
+.info {
+    width: 54px;
+    height: 54px;
+
+    position: absolute;
+    top: 64px;
+    left: 24px;
+    background: url('img/info.svg'), 50% / cover no-repeat;
+}
+
+.instr {
+    width: 85%;
+    min-height: 326px;
+    border-radius: 23px;
+    background: #858484;
+    position: absolute;
+    left: calc(50% - (85% / 2));
+    top: 25%;
+}
+
+.qr_code {
+    background: url("img/qr код.svg"), 50% / cover no-repeat;
+    width: 202px;
+    height: 205px;
+    margin: 18px auto 0;
+}
+.terminal {
+    background: url("img/W_Terminal 1.svg"), 50% / cover no-repeat;
+    width: 151px;
+    height: 151px;
+    margin: 47px auto 25px;
+}
+.route {
+    background: url("img/w_route\ 1.svg"), 50% / cover no-repeat;
+    width: 170px;
+    height: 174px;
+    margin: 47px auto 25px;
+    
+}
+.again {
+    background: url("img/qr\ код.svg") 0% / 70% no-repeat,
+                url("img/W_Terminal\ 1.svg") 100% / 50% no-repeat;
+    width: 245px;
+    height: 174px;
+    margin: 47px auto 25px;
+    
+}
+.final {
+    position: relative;
+    padding: 50px 22px 41px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 231px;
+}
+.close{
+    z-index: 5;
+    width: 42px;
+    height: 42px;
+    background: url("img/W_exit\ 1.svg") 50% / cover no-repeat;
+    position: absolute;
+    top: 8px;
+    right: 7px;
+
+
+}
+.instr.three p,
+    .instr.four p {
+    margin-bottom: 50px;
+}
+#again_inst {
+font-size: 24px;
+font-weight: 500;
+line-height: 21px; 
+letter-spacing: -0.32px;
+}
+
+.instr.one::after {
+    content: '1.';
+    position: absolute;
+    left: 50px;
+    top: 70px;
+
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.32px;
+}
+.instr.two > p {
+    padding: 0 16px;
+}
+.instr.two > :nth-child(3n) {
+    margin-top: 30px;
+    margin-bottom: 58px;
+}
+.instr.two::after {
+    content: '2.';
+    position: absolute;
+    left: 38px;
+    top: 70px;
+
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.32px;
+}
+.instr.three::after {
+    content: '3.';
+    position: absolute;
+    left: 50px;
+    top: 70px;
+
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.32px;
+}
+.instr.four::after {
+    content: '4.';
+    position: absolute;
+    left: 50px;
+    top: 70px;
+
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.32px;
+}
