@@ -23,10 +23,27 @@
 body {
     background: #00000000;
     overflow: hidden;
+    touch-action: none;
 }
 
 body .hidden {
     display: none;
+}
+.logo {
+    text-align: start;
+    position: absolute;
+    bottom: -100%;
+    font-size: 16px;
+    
+}
+
+.logo_img {
+    margin-right: 18px;
+    float: left;
+    border-radius: 5px;
+background: url('img/logo.png')  50% / cover no-repeat;
+width: 67px;
+height: 67px;
 }
 
 .info {

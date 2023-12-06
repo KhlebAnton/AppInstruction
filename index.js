@@ -1,3 +1,4 @@
+
 const info = document.querySelector('.info');
 const instrs = document.querySelectorAll('.instr');
 
