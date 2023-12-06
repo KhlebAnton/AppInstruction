@@ -27,8 +27,39 @@ body {
 }
 
 body .hidden {
-    display: none;
+    opacity: 0;
+    z-index: -2;
+    animation: fadeOut ease 0.5s;
+    -webkit-animation: fadeOut ease 0.5s;
+    -moz-animation: fadeOut ease 0.5s;
+    -o-animation: fadeOut ease 0.5s;
+    -ms-animation: fadeOut ease 0.5s;
+    
 }
+@keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+  }
+  
+  @-moz-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+  }
+  
+  @-webkit-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+  }
+  
+  @-o-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+  }
+  
+  @-ms-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+  }
 .logo {
     text-align: start;
     position: absolute;
@@ -63,11 +94,43 @@ height: 67px;
     max-width: 342px;
     border-radius: 23px;
     padding: 0 16px;
-    background: #858484;
+    background: rgba(0, 0, 0, 0.60);;
     position: absolute;
     left: calc(50% - (326px / 2));
     top: 25%;
+    opacity: 1;
+
+    animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
 }
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 
 .qr_code {
     background: url("img/qr код.svg"), 50% / cover no-repeat;
@@ -89,8 +152,8 @@ height: 67px;
     
 }
 .again {
-    background: url("img/qr\ код.svg") 0% / 70% no-repeat,
-                url("img/W_Terminal\ 1.svg") 100% / 50% no-repeat;
+    background: url("img/qr\ код.svg") -20% / 70% no-repeat,
+                url("img/W_Terminal\ 1.svg") 90% / 50% no-repeat;
     width: 245px;
     height: 174px;
     margin: 47px auto 25px;
@@ -126,7 +189,7 @@ line-height: 21px;
 letter-spacing: -0.32px;
 }
 
-.instr.one::after {
+/* .instr.one::after {
     content: '1.';
     position: absolute;
     left: 50px;
@@ -139,13 +202,13 @@ letter-spacing: -0.32px;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: -0.32px;
-}
+} */
 
 .instr.two > :nth-child(3n) {
     margin-top: 30px;
     margin-bottom: 58px;
 }
-.instr.two::after {
+/* .instr.two::after {
     content: '2.';
     position: absolute;
     left: 38px;
@@ -186,4 +249,4 @@ letter-spacing: -0.32px;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: -0.32px;
-}
+} */
