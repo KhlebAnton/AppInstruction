@@ -60,10 +60,12 @@ height: 67px;
     touch-action: none;
     width: 85%;
     min-height: 326px;
+    max-width: 342px;
     border-radius: 23px;
+    padding: 0 16px;
     background: #858484;
     position: absolute;
-    left: calc(50% - (85% / 2));
+    left: calc(50% - (326px / 2));
     top: 25%;
 }
 
@@ -138,9 +140,7 @@ letter-spacing: -0.32px;
     line-height: 21px;
     letter-spacing: -0.32px;
 }
-.instr.two > p {
-    padding: 0 16px;
-}
+
 .instr.two > :nth-child(3n) {
     margin-top: 30px;
     margin-bottom: 58px;
