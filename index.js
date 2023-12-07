@@ -4,8 +4,8 @@ const instrs = document.querySelectorAll('.instr_container');
 
 function goInstuction() {
     instrs.forEach(e => e.classList.add('hidden'));
-    
     info.classList.add('hidden');
+    
     console.log(info);
     
 
