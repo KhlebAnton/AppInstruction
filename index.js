@@ -1,6 +1,6 @@
 
 const info = document.querySelector('.info');
-const instrs = document.querySelectorAll('.instr');
+const instrs = document.querySelectorAll('.instr_container');
 
 function goInstuction() {
     instrs.forEach(e => e.classList.add('hidden'));

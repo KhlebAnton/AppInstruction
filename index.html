@@ -12,43 +12,59 @@
 <body>
     <div onclick="goInstuction()" class="info"></div>
     <div class="screen">
-        <div class="instr one hidden">
-            <div class="qr_code">
+        <div class="instr_container hidden">
+            <div class="instr one">
+                <div class="qr_code">
 
-            </div>
-            <p>Просканируйте QR код на книжном терминале</p>
-        </div>
-        <div class="instr two hidden">
-            <div class="terminal">
-
-            </div>
-            <p>Отойдите от терминала и просканируйте пространство вокруг терминала.</p>
-            <p>Вы поймете что процесс сканирования прошел успешно по исчезновению овала на экране телефона.</p>
-        </div>
-        <div class="instr three hidden">
-            <div class="route">
-
-            </div>
-            <p>
-                Следуйте по маршруту,он приведет вас к полке с искомой книгой.</p>
-        </div>
-        <div class="instr four hidden">
-            <div class="again">
-
-            </div>
-            <p>Для поиска новой книги повторите шаги 1 и 2</p>
-        </div>
-        <div class="instr final hidden">
-            
-            <p>Данное приложение является навигатором в дополненной реальности по книжному фонду библиотеки “Нота”</p>
-            <span id="again_inst" onclick="goInstuction()">Повторить инструкцию</span>
-            <div class="close"></div>
-
-            <div class="logo">
-                <div class="logo_img"></div>
-                <p>Разработано при участии ЦБС Красногвардейского района, БКЦ «НОТА»</p>
+                </div>
+                <p>Просканируйте QR код на книжном терминале</p>
             </div>
         </div>
+
+        <div class="instr_container hidden">
+            <div class="instr two">
+                <div class="terminal">
+
+                </div>
+                <p>Отойдите от терминала и просканируйте пространство вокруг терминала.</p>
+                <p>Вы поймете что процесс сканирования прошел успешно по исчезновению овала на экране телефона.</p>
+            </div>
+        </div>
+
+        <div class="instr_container hidden">
+            <div class="instr three">
+                <div class="route">
+
+                </div>
+                <p>
+                    Следуйте по маршруту,он приведет вас к полке с искомой книгой.</p>
+            </div>
+        </div>
+
+        <div class="instr_container hidden">
+            <div class="instr four">
+                <div class="again">
+
+                </div>
+                <p>Для поиска новой книги повторите шаги 1 и 2</p>
+            </div>
+        </div>
+
+        <div class="instr_container hidden">
+            <div class="instr final">
+
+                <p>Данное приложение является навигатором в дополненной реальности по книжному фонду библиотеки “Нота”
+                </p>
+                <span id="again_inst" onclick="goInstuction()">Повторить инструкцию</span>
+                <div class="close"></div>
+
+                <div class="logo">
+                    <div class="logo_img"></div>
+                    <p>Разработано при участии ЦБС Красногвардейского района, БКЦ «НОТА»</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="index.js"></script>
