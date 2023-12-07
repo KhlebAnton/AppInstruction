@@ -4,7 +4,9 @@ const instrs = document.querySelectorAll('.instr_container');
 
 function goInstuction() {
     instrs.forEach(e => e.classList.add('hidden'));
+    
     info.classList.add('hidden');
+    console.log(info);
     
 
     instrs[0].classList.remove('hidden');
@@ -15,8 +17,9 @@ function goInstuction() {
                 instr.nextElementSibling.classList.remove('hidden');
             })
         } else {
-            info.classList.remove('hidden');
+            
             document.querySelector('.close').addEventListener('click', ()=> {
+                info.classList.remove('hidden');
                 instrs.forEach(e => e.classList.add('hidden'));
             })
         }

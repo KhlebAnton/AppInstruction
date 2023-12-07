@@ -32,7 +32,7 @@
   opacity: 1;
 }
 body {
-    background: #00000000;
+    background: #0000004d;
     overflow: hidden;
     touch-action: none;
 }
@@ -100,14 +100,14 @@ height: 67px;
 
 .instr {
     touch-action: none;
-    width: 85%;
+    
     min-height: 326px;
     max-width: 342px;
     border-radius: 23px;
     padding: 0 16px;
     background: rgba(0, 0, 0, 0.60);;
     position: absolute;
-    left: calc(50% - (326px / 2));
+    left: calc(50% - (342px / 2));
     top: 25%;
     
 
