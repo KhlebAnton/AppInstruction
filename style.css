@@ -8,6 +8,11 @@
 .screen.minus {
   z-index: -5;
 }
+span.step {
+  font-weight: bold;
+  position: relative;
+  border-bottom: 2px solid #ffffff;
+}
 
 .screen {
     position: absolute;
